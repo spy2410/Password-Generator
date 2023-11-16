@@ -6,4 +6,4 @@ Optimized the code using useCallback hook and enhanced user experience by using 
 Hooks used useState, useEffect, useCallback and useRef.
 
 Deployed Link
-https://password-producer.netlify.app/
+https://password-thinker.netlify.app/
