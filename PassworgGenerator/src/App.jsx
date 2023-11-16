@@ -40,16 +40,16 @@ function App() {
         <input type="text" value={password} className='outline-none w-full py-1 px-3' placeholder='password' readOnly ref={passwordRef} />
         <button onClick={copytoClipboard} className='outline-none bg-blue-700 text-white px-3 py-0.5 shrink-0'>copy</button>
       </div>
-      <div className='flex text-sm gap-x-2'>
-        <div className='flex items-center gap-x-1'>
+      <div className='flex text-sm gap-x-2 flex-col sm:flex-row'>
+        <div className='flex items-center gap-x-1 flex-col sm:flex-row'>
           <input type="range" min={6} max={100} value={length} className='cursor-pointer' onChange={(e) => { setLength(e.target.value) }} />
           <label>length: {length}</label>
         </div>
-        <div className='flex items-center gap-x-1'>
+        <div className='flex items-center gap-x-1 justify-center align-middle'>
           <input type="checkbox" defaultChecked={withNum} id="numberInput" onChange={() => { setWithNum((prev) => !prev) }} />
           <label htmlFor='numberInput'>Numbers</label>
         </div>
-        <div className='flex items-center gap-x-1'>
+        <div className='flex items-center gap-x-1 justify-center align-middle'>
           <input type="checkbox" defaultChecked={withChar} id="characterInput" onChange={() => { setWithChar((prev) => !prev) }} />
           <label htmlFor='characterInput'>Character</label>
         </div>
